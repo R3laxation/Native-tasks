@@ -47,3 +47,5 @@
         }
 
         arr.map((item, index, arr) => arr[arr.length - index -1])
+
+        [...arr].map(arr.pop, arr)
