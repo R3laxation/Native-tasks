@@ -21,3 +21,17 @@
     //
     // Math.max(...arr)
     // Math.max.apply(null, array)
+
+    // 3. Sort
+
+        arr.sort((a, b) => a - b)
+
+        const users = [
+            {name:'John', age: 23},
+            {name:'Pit', age: 21},
+        ]
+
+        users.sort((a, b) => a.age - b.age)
+        users.sort((a, b) => {
+            return a.name.localeCompare(b.name)
+        })
