@@ -13,5 +13,11 @@
 // Math.max(arr[i], max)
 // }
 
-    arr.reduce((acc, el) => acc > el ? acc : el)
-    arr.reduce((acc, el) => Math.max(acc, el))
+    // arr.reduce((acc, el) => acc > el ? acc : el)
+    // arr.reduce((acc, el) => Math.max(acc, el))
+    // arr.sort((a, b) => a -b )
+    // let max = arr[array.length-1]
+    // let max = arr.pop()
+    //
+    // Math.max(...arr)
+    // Math.max.apply(null, array)
