@@ -24,14 +24,26 @@
 
     // 3. Sort
 
-        arr.sort((a, b) => a - b)
+        // arr.sort((a, b) => a - b)
+        //
+        // const users = [
+        //     {name:'John', age: 23},
+        //     {name:'Pit', age: 21},
+        // ]
+        //
+        // users.sort((a, b) => a.age - b.age)
+        // users.sort((a, b) => {
+        //     return a.name.localeCompare(b.name)
+        // })
 
-        const users = [
-            {name:'John', age: 23},
-            {name:'Pit', age: 21},
-        ]
+        4. Reverse array
 
-        users.sort((a, b) => a.age - b.age)
-        users.sort((a, b) => {
-            return a.name.localeCompare(b.name)
-        })
+        arr.reverse()
+
+        const res = []
+
+        for (let i = arr.length-1; i >= 0; i--) {
+            res.push(arr[i])
+        }
+
+        arr.map((item, index, arr) => arr[arr.length - index -1])
