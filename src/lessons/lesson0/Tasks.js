@@ -36,16 +36,30 @@
         //     return a.name.localeCompare(b.name)
         // })
 
-        4. Reverse array
+        // 4. Reverse array
+        //
+        // arr.reverse()
+        //
+        // const res = []
+        //
+        // for (let i = arr.length-1; i >= 0; i--) {
+        //     res.push(arr[i])
+        // }
+        //
+        // arr.map((item, index, arr) => arr[arr.length - index -1])
+        //
+        // [...arr].map(arr.pop, arr)
 
-        arr.reverse()
+        5. Filter false value
 
-        const res = []
+        const arr = [8, 'correct', 0, false, 9, NaN, '']
 
-        for (let i = arr.length-1; i >= 0; i--) {
-            res.push(arr[i])
+        const notFalsy = [];
+
+        for(let i = 0; i <arr.length; i++){
+            if(!!arr[i]) notFalsy.push(arr[i])
         }
 
-        arr.map((item, index, arr) => arr[arr.length - index -1])
 
-        [...arr].map(arr.pop, arr)
+        arr.filter((item) => !!item)
+        arr.filter(Boolean)
