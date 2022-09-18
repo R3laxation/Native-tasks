@@ -11,5 +11,7 @@
 //         ili
 
 // Math.max(arr[i], max)
-
 // }
+
+    arr.reduce((acc, el) => acc > el ? acc : el)
+    arr.reduce((acc, el) => Math.max(acc, el))
