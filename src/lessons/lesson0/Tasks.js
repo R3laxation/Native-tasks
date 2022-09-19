@@ -50,16 +50,49 @@
         //
         // [...arr].map(arr.pop, arr)
 
-        5. Filter false value
+        // 5. Filter false value
+        //
+        // const arr = [8, 'correct', 0, false, 9, NaN, '']
+        //
+        // const notFalsy = [];
+        //
+        // for(let i = 0; i <arr.length; i++){
+        //     if(!!arr[i]) notFalsy.push(arr[i])
+        // }
+        //
+        //
+        // arr.filter((item) => !!item)
+        // arr.filter(Boolean)
 
-        const arr = [8, 'correct', 0, false, 9, NaN, '']
+        // 6. Uniqueness symbols in a string
 
-        const notFalsy = [];
+        const isUnique = (string) => {
+                // for(let i =0; i<string.length; i++){
+                //     const char = string[i] - текущий символ
+                //
+                //     if(string.lastIndexOf(char) !== i) {  найденный индекс не равен текущему
+                //         return false
+                //     }
+                //
+                // }
+                // return true
 
-        for(let i = 0; i <arr.length; i++){
-            if(!!arr[i]) notFalsy.push(arr[i])
+
+            // const set = new Set()
+            // for(let i=0; i<string.length; i++) {
+            //     const char = string[i]
+            //
+            //     if(set.has(char)){
+            //         return false
+            //     }
+            //     set.add(char)
+            //
+            // }
+            //
+            // return true
+
+
+            return new Set(string).size === string.length
         }
 
 
-        arr.filter((item) => !!item)
-        arr.filter(Boolean)
