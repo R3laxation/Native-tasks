@@ -160,3 +160,27 @@
             //
             //     return maxFreqStr
             // }
+
+            // // 10. Is this string rotated?
+            //     const isTringRotated = (sourse, test) => { приходят строки, сравниваем их
+            //         // if(sourse.length !== test.length){
+            //         //     return false
+            //         // }
+            //         //
+            //         //
+            //         // for(let i = 0; i < sourse.length; i++){
+            //         //     const rotate = sourse.slice(i, sourse.length) + sourse.slice(0,i) берем первый символ в строке, добавляем в конец строки
+            //         //
+            //         //     if(rotate === test) {
+            //         //         return true
+            //         //     }
+            //         // }
+            //         // return false
+            //
+            //
+            //
+            //
+            //         return (sourse + sourse).includes(test) && sourse.length === test.length
+            //     }
+
+
