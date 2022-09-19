@@ -213,17 +213,41 @@
 
             // 13. Sum elements
 
-            function sum(n){
-                let acc = n
+            // function sum(n){
+            //     let acc = n
+            //
+            //     return function accumulate(i){
+            //         if(typeof i === 'number'){
+            //             acc += i
+            //
+            //             return accumulate;
+            //         }
+            //         return acc
+            //     }
+            //
+            // }
+            // sum((1)(2)(3))
+            14. Binar search
 
-                return function accumulate(i){
-                    if(typeof i === 'number'){
-                        acc += i
+            let array = [1, 5, -10, 2, 7, -15]
 
-                        return accumulate;
+            const search = (nums, target) => {
+                let left = 0;
+                let right = nums.length -1;
+                let mid;
+
+                while(left <= right){
+                    mid = Math.round((right-left)/2) + left; вычислили длину подмассива и прибавили значение слева
+
+                    if(target === nums[mid]){
+                        return mid
+                    } else if(target < nums[mid]){
+                        right = mid - 1 если меньше, то меняем позицию правого указателя
+                    } else {
+                        left = mid + 1
                     }
-                    return acc
                 }
-
+                return -1 если элемента нет в массиве
             }
-            sum((1)(2)(3))
+
+            search(array, 9)
