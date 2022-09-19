@@ -227,27 +227,36 @@
             //
             // }
             // sum((1)(2)(3))
-            14. Binar search
+            // 14. Binar search
+            //
+            // let array = [1, 5, -10, 2, 7, -15]
+            //
+            // const search = (nums, target) => {
+            //     let left = 0;
+            //     let right = nums.length -1;
+            //     let mid;
+            //
+            //     while(left <= right){
+            //         mid = Math.round((right-left)/2) + left; вычислили длину подмассива и прибавили значение слева
+            //
+            //         if(target === nums[mid]){
+            //             return mid
+            //         } else if(target < nums[mid]){
+            //             right = mid - 1 если меньше, то меняем позицию правого указателя
+            //         } else {
+            //             left = mid + 1
+            //         }
+            //     }
+            //     return -1 если элемента нет в массиве
+            // }
+            //
+            // search(array, 9)
 
-            let array = [1, 5, -10, 2, 7, -15]
+            15. Palindrom
 
-            const search = (nums, target) => {
-                let left = 0;
-                let right = nums.length -1;
-                let mid;
+            const palindrom = (str) => {
 
-                while(left <= right){
-                    mid = Math.round((right-left)/2) + left; вычислили длину подмассива и прибавили значение слева
+                let str = str.toLowerCase().replace(/\s/g, '')
 
-                    if(target === nums[mid]){
-                        return mid
-                    } else if(target < nums[mid]){
-                        right = mid - 1 если меньше, то меняем позицию правого указателя
-                    } else {
-                        left = mid + 1
-                    }
-                }
-                return -1 если элемента нет в массиве
+                return str = str.split('').reverse().join('');
             }
-
-            search(array, 9)
