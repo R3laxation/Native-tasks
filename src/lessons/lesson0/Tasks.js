@@ -190,3 +190,23 @@
             // a[0] = 'D'
             // consol.log(a) 'abc' - в памяти хранится примитив, мы не можем его изменить
 
+            12. Sum array
+
+            const arr = [1, 2, [1, 2], [9, 10], 12, [15,16]]
+
+            // const res = arr.flat(infinity).reduce((a, b) => a+b) передаем число глубины мамссивов, infinity = все
+
+                // const flatArr = (arr) => {
+                //     let res = []
+                //     arr.forEach(item => {
+                //         if(Array.isArray(item)){
+                //             res = res.concat(flatArr(item)) или так
+                //             res = [...res, ...flatArr(item)] или так
+                //         } else {
+                //             res.push(item)
+                //         }
+                //     })
+                //     return res;
+                // }
+                //
+                // const result = arr.flatArr(arr)
