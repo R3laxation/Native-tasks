@@ -66,7 +66,7 @@
 
         // 6. Uniqueness symbols in a string
 
-        const isUnique = (string) => {
+        // const isUnique = (string) => {
                 // for(let i =0; i<string.length; i++){
                 //     const char = string[i] - текущий символ
                 //
@@ -92,7 +92,27 @@
             // return true
 
 
-            return new Set(string).size === string.length
+        //     return new Set(string).size === string.length
+        // }
+
+        // 7. Flat array
+        const flatten =(arr) => {
+            const res = []
+
+            for(let i =0; i< arr.length; i++){
+                if(Array.isArray(arr[i])){
+                    const flat = flatten(arr[i]) рекурсия
+                    for(let j =0; j< flat.length; j++) { бежим по вложенному массиву
+                        res.push(flat[j])
+                    }
+                } else {
+                    res.push(arr[i])
+                }
+            }
+
+
+            return res
         }
+
 
 
