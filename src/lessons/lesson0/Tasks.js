@@ -190,9 +190,9 @@
             // a[0] = 'D'
             // consol.log(a) 'abc' - в памяти хранится примитив, мы не можем его изменить
 
-            12. Sum array
-
-            const arr = [1, 2, [1, 2], [9, 10], 12, [15,16]]
+            // 12. Sum array
+            //
+            // const arr = [1, 2, [1, 2], [9, 10], 12, [15,16]]
 
             // const res = arr.flat(infinity).reduce((a, b) => a+b) передаем число глубины мамссивов, infinity = все
 
@@ -210,3 +210,20 @@
                 // }
                 //
                 // const result = arr.flatArr(arr)
+
+            // 13. Sum elements
+
+            function sum(n){
+                let acc = n
+
+                return function accumulate(i){
+                    if(typeof i === 'number'){
+                        acc += i
+
+                        return accumulate;
+                    }
+                    return acc
+                }
+
+            }
+            sum((1)(2)(3))
