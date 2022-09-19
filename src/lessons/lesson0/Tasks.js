@@ -136,4 +136,27 @@
             // }
 
 
+            // 9. Вернуть самую встречающуюся строку в массиве
 
+
+            // const highestFrequency =(arr) =>{
+            //     const map = {} сколько раз встречалась строка, ключ - строка, значение - количество
+            //     let maxFreq = 0
+            //     let maxFreqStr = arr[0]
+            //
+            //     for(let i = 0; i<arr.length; i++){
+            //         const cur = arr[i]
+            //
+            //         if(map[cur]){  если уже присутствует
+            //             map[cur]++
+            //         } else {
+            //             map[cur] = 1 если нет, то ставим 1, встречается раз
+            //         }
+            //         if(map[cur] > maxFreq){
+            //             maxFreq = map[cur]
+            //             let maxFreqStr = cur
+            //         }
+            //     }
+            //
+            //     return maxFreqStr
+            // }
