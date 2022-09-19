@@ -96,23 +96,44 @@
         // }
 
         // 7. Flat array
-        const flatten =(arr) => {
-            const res = []
+        // const flatten =(arr) => {
+        //     const res = []
+        //
+        //     for(let i =0; i< arr.length; i++){
+        //         if(Array.isArray(arr[i])){
+        //             const flat = flatten(arr[i]) рекурсия
+        //             for(let j =0; j< flat.length; j++) { бежим по вложенному массиву
+        //                 res.push(flat[j])
+        //             }
+        //         } else {
+        //             res.push(arr[i])
+        //         }
+        //     }
+        //
+        //
+        //     return res
+        // }
+        // 8. Remove dupes in a string
 
-            for(let i =0; i< arr.length; i++){
-                if(Array.isArray(arr[i])){
-                    const flat = flatten(arr[i]) рекурсия
-                    for(let j =0; j< flat.length; j++) { бежим по вложенному массиву
-                        res.push(flat[j])
-                    }
-                } else {
-                    res.push(arr[i])
-                }
-            }
+            // const removeDupes = (str) => {
+                // const res = []
+                // const map = {}
+                //
+                // for(let i = 0; i<str.length; i++){
+                //     const char = str[i]
+                //     if(!map[char]){
+                //         map[char] = true
+                //         res.push(char)
+                //     }
+                // }
+                // return res.join('')
 
 
-            return res
-        }
+
+                // return new Set(str) - объект с буками строки
+
+                // return Array.from(new Set(str)).join('')
+            // }
 
 
 
