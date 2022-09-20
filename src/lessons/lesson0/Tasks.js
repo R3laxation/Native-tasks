@@ -252,11 +252,16 @@
             //
             // search(array, 9)
 
-            15. Palindrom
+            // 15. Palindrom
+            //
+            // const palindrom = (str) => {
+            //
+            //     let str = str.toLowerCase().replace(/\s/g, '')
+            //
+            //     return str = str.split('').reverse().join('');
+            // }
+            16. Bar is not a function
+            console.log(bar())
+            var bar = () => {
 
-            const palindrom = (str) => {
-
-                let str = str.toLowerCase().replace(/\s/g, '')
-
-                return str = str.split('').reverse().join('');
             }
