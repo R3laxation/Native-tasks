@@ -274,19 +274,32 @@
 
 // console.log(a)
 
-17. Make counter
+// 17. Make counter
+//
+// function makeCounter() {
+//     let count = 0;
+//
+//     return() =>{
+//         console.log(++count)
+//     }
+// }
+//
+// let counter = makeCounter();
+//     let counter2 = makeCounter();
+//     counter()   1
+//     counter()   2
+//     counter()   3
+// counter2()      1
 
-function makeCounter() {
-    let count = 0;
+18. Recursion
 
-    return() =>{
-        console.log(++count)
+    const pow = (x,n) => {
+        if(n === 1){
+            return x
+        }
+
+        return x * pow(x, n -1)
+
     }
-}
 
-let counter = makeCounter();
-    let counter2 = makeCounter();
-    counter()   1
-    counter()   2
-    counter()   3
-counter2()      1
+console.log(pow(2, 3)) //6
