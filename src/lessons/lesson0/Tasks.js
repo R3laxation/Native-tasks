@@ -260,8 +260,33 @@
             //
             //     return str = str.split('').reverse().join('');
             // }
-            16. Bar is not a function
-            console.log(bar())
-            var bar = () => {
+//             16. Bar is not a function
+//             console.log(bar) undefined
+//             console.log(bar()) error is not a function
+//             var bar = () => {}
+// {
+//     if(true){
+//         if(true){
+//             var a = 10
+//         }
+//     }
+// }
 
-            }
+// console.log(a)
+
+17. Make counter
+
+function makeCounter() {
+    let count = 0;
+
+    return() =>{
+        console.log(++count)
+    }
+}
+
+let counter = makeCounter();
+    let counter2 = makeCounter();
+    counter()   1
+    counter()   2
+    counter()   3
+counter2()      1
