@@ -291,15 +291,19 @@
 //     counter()   3
 // counter2()      1
 
-18. Recursion
+// 18. Recursion
+//
+//     const pow = (x,n) => {
+//         if(n === 1){
+//             return x
+//         }
+//
+//         return x * pow(x, n -1)
+//
+//     }
+//
+// console.log(pow(2, 3)) //6
 
-    const pow = (x,n) => {
-        if(n === 1){
-            return x
-        }
 
-        return x * pow(x, n -1)
 
-    }
-
-console.log(pow(2, 3)) //6
+19. New task
