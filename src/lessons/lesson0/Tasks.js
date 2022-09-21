@@ -306,20 +306,53 @@
 
 
 
-19. ForEach
+// 19. ForEach
+//
+//
+// const  arr = [10,11,12,31,14,15]
+//
+// Array.prototype.forEach2 = function (callback){
+//
+//         let arr = this;
+//
+//         for(let i =0; i<arr.length; i++){
+//             callback(arr[i], i, arr)
+//         }
+// }
+//
+// arr.forEach2((item, index, arr) => {
+//     console.log(item, index)
+// })
+
+20. Filter
 
 
 const  arr = [10,11,12,31,14,15]
 
-Array.prototype.forEach2 = function (callback){
+Array.prototype.filter2 = function (callback){
+
 
         let arr = this;
+        let cur = this[i];
+        let res = [];
 
-        for(let i =0; i<arr.length; i++){
-            callback(arr[i], i, arr)
+        for(let i = 0; i < arr.length; i++){
+            if(callback(cur, i, arr) {
+                res.push(cur)
+            }
         }
+        return res
 }
 
-arr.forEach2((item, index, arr) => {
-    console.log(item, index)
-})
+function isPrime(num) {
+    if (num <= 1) return false;
+    else if (num === 2) return true;
+    else {
+        for (let i = 2; i < num; i++) if (num % i === 0) return false;
+        return true;
+    }
+}
+
+
+arr.filter2(isPrime)
+
