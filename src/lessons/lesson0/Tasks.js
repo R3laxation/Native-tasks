@@ -306,4 +306,20 @@
 
 
 
-19. New task
+19. ForEach
+
+
+const  arr = [10,11,12,31,14,15]
+
+Array.prototype.forEach2 = function (callback){
+
+        let arr = this;
+
+        for(let i =0; i<arr.length; i++){
+            callback(arr[i], i, arr)
+        }
+}
+
+arr.forEach2((item, index, arr) => {
+    console.log(item, index)
+})
