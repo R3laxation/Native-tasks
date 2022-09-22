@@ -274,22 +274,22 @@
 
 // console.log(a)
 
-// 17. Make counter
-//
-// function makeCounter() {
-//     let count = 0;
-//
-//     return() =>{
-//         console.log(++count)
-//     }
-// }
-//
-// let counter = makeCounter();
-//     let counter2 = makeCounter();
-//     counter()   1
-//     counter()   2
-//     counter()   3
-// counter2()      1
+17. Make counter
+
+function makeCounter() {
+    let count = 0;
+
+    return() =>{
+        console.log(++count)
+    }
+}
+
+let counter = makeCounter();
+    let counter2 = makeCounter();
+    counter()   1
+    counter()   2
+    counter()   3
+counter2()      1
 
 // 18. Recursion
 //
@@ -324,35 +324,37 @@
 //     console.log(item, index)
 // })
 
-20. Filter
+// 20. Filter
+//
+//
+// const  arr = [10,11,12,31,14,15]
+//
+// Array.prototype.filter2 = function (callback){
+//
+//
+//         let arr = this;
+//         let cur = this[i];
+//         let res = [];
+//
+//         for(let i = 0; i < arr.length; i++){
+//             if(callback(cur, i, arr) {
+//                 res.push(cur)
+//             }
+//         }
+//         return res
+// }
+//
+// function isPrime(num) {
+//     if (num <= 1) return false;
+//     else if (num === 2) return true;
+//     else {
+//         for (let i = 2; i < num; i++) if (num % i === 0) return false;
+//         return true;
+//     }
+// }
+//
+//
+// arr.filter2(isPrime)
 
-
-const  arr = [10,11,12,31,14,15]
-
-Array.prototype.filter2 = function (callback){
-
-
-        let arr = this;
-        let cur = this[i];
-        let res = [];
-
-        for(let i = 0; i < arr.length; i++){
-            if(callback(cur, i, arr) {
-                res.push(cur)
-            }
-        }
-        return res
-}
-
-function isPrime(num) {
-    if (num <= 1) return false;
-    else if (num === 2) return true;
-    else {
-        for (let i = 2; i < num; i++) if (num % i === 0) return false;
-        return true;
-    }
-}
-
-
-arr.filter2(isPrime)
+21. Byl na sobes v Epam, dovolen
 
