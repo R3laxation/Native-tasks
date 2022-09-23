@@ -372,13 +372,13 @@ let targetSum = 10
 
     const sum = (arr, targetSum) => {
         for (let i = 0; i < arr.length; i++) {
-            const currentNumber = arr[i];
+            const cur = arr[i];
 
             for (let j = i + 1; j < arr.length; j++) {
-                const currentCompareNumber = arr[j];
+                const curCompare = arr[j];
 
-                if (currentCompareNumber + currentNumber === targetSum) {
-                    return [currentNumber, currentCompareNumber];
+                if (curCompare + cur === targetSum) {
+                    return [cur, curCompare];
                 }
             }
         }
