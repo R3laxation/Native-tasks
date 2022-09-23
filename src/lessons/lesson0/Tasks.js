@@ -356,12 +356,34 @@ counter2()      1
 //
 // arr.filter2(isPrime)
 
-21. Change String
+// 21. Change String
+//
+//     const arr = ['*', '1', 'b', '1c']
+//
+//     const changeString = (arr) => {
+//         return [].slice.call(arr, 1).join(arr[0])
+//     }
+//
+//     changeString(arr)
+22. Sum two numbers
 
-    const arr = ['*', '1', 'b', '1c']
+let arr = [3, 5, -4, 8, 11, 1, -1, 6]
+let targetSum = 10
 
-    const changeString = (arr) => {
-        return [].slice.call(arr, 1).join(arr[0])
+    const sum = (arr, targetSum) => {
+        for (let i = 0; i < arr.length; i++) {
+            const currentNumber = arr[i];
+
+            for (let j = i + 1; j < arr.length; j++) {
+                const currentCompareNumber = arr[j];
+
+                if (currentCompareNumber + currentNumber === targetSum) {
+                    return [currentNumber, currentCompareNumber];
+                }
+            }
+        }
+
+        return [];
     }
 
-    changeString(arr)
+    sum(arr, targetSum)
