@@ -365,25 +365,55 @@ counter2()      1
 //     }
 //
 //     changeString(arr)
-22. Sum two numbers
+// 22. Sum two numbers
+//
+// let arr = [3, 5, -4, 8, 11, 1, -1, 6]
+// let targetSum = 10
+//
+//     const sum = (arr, targetSum) => {
+//         for (let i = 0; i < arr.length; i++) {
+//             const cur = arr[i];
+//
+//             for (let j = i + 1; j < arr.length; j++) {
+//                 const curCompare = arr[j];
+//
+//                 if (curCompare + cur === targetSum) {
+//                     return [cur, curCompare];
+//                 }
+//             }
+//         }
+//
+//         return [];
+//     }
+//
+//     sum(arr, targetSum)
 
-let arr = [3, 5, -4, 8, 11, 1, -1, 6]
-let targetSum = 10
+23. Array to object with filter and sort
 
-    const sum = (arr, targetSum) => {
-        for (let i = 0; i < arr.length; i++) {
-            const cur = arr[i];
+    const arr = [
+        {name: 'Kolya', age: 22, groupId: 3},
+        {name: 'Vasya', age: 13, groupId: 34},
+        {name: 'Petya', age: 55, groupId: 42},
+        {name: 'Alibaba', age: 33, groupId: 33},
+        {name: 'Yura', age: 44, groupId: 2},
+    ]
 
-            for (let j = i + 1; j < arr.length; j++) {
-                const curCompare = arr[j];
+    const morphArray = (arr) => {
+        return arr.reduce((acc, student) => {
+            // на выходе {студент : массив из студентов старше 18}
+            const { groupId, age } = student;
 
-                if (curCompare + cur === targetSum) {
-                    return [cur, curCompare];
-                }
+            if (age < 18) {
+                return acc;
             }
-        }
 
-        return [];
-    }
+            if (groupId in acc) {
+                acc[groupId].push(student);
+            } else {
+                acc[groupId] = [student];
+            }
 
-    sum(arr, targetSum)
+            return acc;
+        }, {});
+}
+morphArray(arr);
