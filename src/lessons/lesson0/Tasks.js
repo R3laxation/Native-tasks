@@ -356,5 +356,12 @@ counter2()      1
 //
 // arr.filter2(isPrime)
 
-21. Byl na sobes v Epam, dovolen
+21. Change String
 
+    const arr = ['*', '1', 'b', '1c']
+
+    const changeString = (arr) => {
+        return [].slice.call(arr, 1).join(arr[0])
+    }
+
+    changeString(arr)
