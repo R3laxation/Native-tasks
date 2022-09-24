@@ -388,32 +388,46 @@ counter2()      1
 //
 //     sum(arr, targetSum)
 
-23. Array to object with filter and sort
+// 23. Array to object with filter and sort
+//
+//     const arr = [
+//         {name: 'Kolya', age: 22, groupId: 3},
+//         {name: 'Vasya', age: 13, groupId: 34},
+//         {name: 'Petya', age: 55, groupId: 42},
+//         {name: 'Alibaba', age: 33, groupId: 33},
+//         {name: 'Yura', age: 44, groupId: 2},
+//     ]
+//
+//     const morphArray = (arr) => {
+//         return arr.reduce((acc, student) => {
+//             // на выходе {студент : массив из студентов старше 18}
+//             const { groupId, age } = student;
+//
+//             if (age < 18) {
+//                 return acc;
+//             }
+//
+//             if (groupId in acc) {
+//                 acc[groupId].push(student);
+//             } else {
+//                 acc[groupId] = [student];
+//             }
+//
+//             return acc;
+//         }, {});
+// }
+// morphArray(arr);
 
-    const arr = [
-        {name: 'Kolya', age: 22, groupId: 3},
-        {name: 'Vasya', age: 13, groupId: 34},
-        {name: 'Petya', age: 55, groupId: 42},
-        {name: 'Alibaba', age: 33, groupId: 33},
-        {name: 'Yura', age: 44, groupId: 2},
-    ]
+24.  Sum two numbers
 
-    const morphArray = (arr) => {
-        return arr.reduce((acc, student) => {
-            // на выходе {студент : массив из студентов старше 18}
-            const { groupId, age } = student;
+    const sum = (a, b) => {
 
-            if (age < 18) {
-                return acc;
-            }
+        if(b){
+            return a+b
+        }
+        return function (b){
+            return a+b
+        }
+    }
 
-            if (groupId in acc) {
-                acc[groupId].push(student);
-            } else {
-                acc[groupId] = [student];
-            }
-
-            return acc;
-        }, {});
-}
-morphArray(arr);
+    sum(5)(8);
