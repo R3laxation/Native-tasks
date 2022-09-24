@@ -469,12 +469,13 @@ counter2()      1
     // plusTen(1);
     // plusTen(10);
 
-    26. Sum elements
-
-    function sum(a){
-        return function (b){
-            return sum(a+b)
-        }
-    }
-
-    sum(5)(4)(11);
+    // 26. Sum elements
+    //
+    // function sum(a){
+    //     return function (b){
+    //         return sum(a+b)
+    //     }
+    // }
+    //
+    // sum(5)(4)(11);
+    27.
