@@ -440,3 +440,12 @@ counter2()      1
 // }
 //
 //     sum(5)(8);
+
+25. Bind clone
+
+    const persone = {
+        firstName : 'Max',
+        logname(){
+            console.log('Name', this.firstName)
+        }
+    }
