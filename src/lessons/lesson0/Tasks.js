@@ -420,14 +420,23 @@ counter2()      1
 
 24.  Sum two numbers
 
-    const sum = (a, b) => {
+    // const sum = (a, b) => {
+    //
+    //     if(b){
+    //         return a+b
+    //     }
+    //     return function (b){
+    //         return a+b
+    //     }
+    // }
 
-        if(b){
-            return a+b
-        }
-        return function (b){
-            return a+b
-        }
-    }
-
-    sum(5)(8);
+// const sum = (...args) => {
+//         if(args.length === 2){
+//             args[0] + args[i]
+//         }
+//         return (b) => {
+//             return args[0] +b
+//         }
+// }
+//
+//     sum(5)(8);
