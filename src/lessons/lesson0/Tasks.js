@@ -443,16 +443,22 @@ counter2()      1
 
 25. Bind clone
 
-    const persone = {
-        firstName: 'Max',
-        logName(number){
-            console.log('Name', this.firstName, number)
+    // const persone = {
+    //     firstName: 'Max',
+    //     logName(number){
+    //         console.log('Name', this.firstName, number)
+    //     }
+    // }
+    //
+    // const persone2 ={
+    //     firstName: 'Kolya'
+    // }
+    //
+    // persone.logName(100)
+    // persone.logName.bind(persone2, 15)()
+
+    Function.prototype.bind2 = function(context, ){
+        return ()=>{
+
         }
     }
-
-    const persone2 ={
-        firstName: 'Kolya'
-    }
-
-    persone.logName()
-    persone.logName.bind(persone2, 15)()
