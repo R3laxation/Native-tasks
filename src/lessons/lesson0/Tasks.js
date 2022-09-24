@@ -457,8 +457,14 @@ counter2()      1
     // persone.logName(100)
     // persone.logName.bind(persone2, 15)()
 
+    const sum = (x,y) => x+y;
+
     Function.prototype.bind2 = function(context, ...args1){
         return (...args2)=>{
             return this.apply(context, args1.concat(args2))
         }
     }
+
+    const plusTen = sum.bind2(undefined, 10);
+    plusTen(1);
+    plusTen(10);
