@@ -457,8 +457,8 @@ counter2()      1
     // persone.logName(100)
     // persone.logName.bind(persone2, 15)()
 
-    Function.prototype.bind2 = function(context, ){
-        return ()=>{
-
+    Function.prototype.bind2 = function(context, ...args1){
+        return (...args2)=>{
+            return this.apply(context, args1.concat(args2))
         }
     }
