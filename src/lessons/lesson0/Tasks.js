@@ -441,7 +441,7 @@ counter2()      1
 //
 //     sum(5)(8);
 
-25. Bind clone
+// 25. Bind clone
 
     // const persone = {
     //     firstName: 'Max',
@@ -457,14 +457,24 @@ counter2()      1
     // persone.logName(100)
     // persone.logName.bind(persone2, 15)()
 
-    const sum = (x,y) => x+y;
+    // const sum = (x,y) => x+y;
+    //
+    // Function.prototype.bind2 = function(context, ...args1){
+    //     return (...args2)=>{
+    //         return this.apply(context, args1.concat(args2))
+    //     }
+    // }
+    //
+    // const plusTen = sum.bind2(undefined, 10);
+    // plusTen(1);
+    // plusTen(10);
 
-    Function.prototype.bind2 = function(context, ...args1){
-        return (...args2)=>{
-            return this.apply(context, args1.concat(args2))
+    26. Sum elements
+
+    function sum(a){
+        return function (b){
+            return sum(a+b)
         }
     }
 
-    const plusTen = sum.bind2(undefined, 10);
-    plusTen(1);
-    plusTen(10);
+    sum(5)(4)(11);
