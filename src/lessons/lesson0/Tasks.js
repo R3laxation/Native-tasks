@@ -445,8 +445,8 @@ counter2()      1
 
     const persone = {
         firstName: 'Max',
-        logname(){
-            console.log('Name', this.firstName)
+        logName(number){
+            console.log('Name', this.firstName, number)
         }
     }
 
@@ -454,5 +454,5 @@ counter2()      1
         firstName: 'Kolya'
     }
 
-    persone.logname()
-    persone.logname.bind(persone2)
+    persone.logName()
+    persone.logName.bind(persone2, 15)()
