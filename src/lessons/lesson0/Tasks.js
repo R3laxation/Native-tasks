@@ -499,10 +499,13 @@ counter2()      1
             let keysOfObj2 = Object.keys(obj1);
 
             for(let i =0; i<keysOfObj1; i++){
-
+                    const key1 = keysOfObj1[i];
 
                 for (let j = 0; j < keysOfObj2.length; j++) {
-
+                    const key2 = keysOfObj1[j];
+                    if(key1 === key2){
+                        obj1[key1] = obj2[key2]
+                    }
                 }
             }
         }
