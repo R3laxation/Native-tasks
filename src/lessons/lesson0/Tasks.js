@@ -519,7 +519,7 @@ counter2()      1
 
         Example:
         arr = [6.1, 7.3, 4.6, 6.3]
-        callbackFunc = Math.floor
+        callbackFunc = Math.ceil()
         result = {
             '6': [6.1, 6.3],
             '7': [7.3],
