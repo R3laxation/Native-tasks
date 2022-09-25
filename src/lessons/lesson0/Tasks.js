@@ -497,4 +497,12 @@ counter2()      1
         const mergeObject = (obj1, obj2) => {
             let keysOfObj1 = Object.keys(obj1);
             let keysOfObj2 = Object.keys(obj1);
+
+            for(let i =0; i<keysOfObj1; i++){
+
+
+                for (let j = 0; j < keysOfObj2.length; j++) {
+
+                }
+            }
         }
