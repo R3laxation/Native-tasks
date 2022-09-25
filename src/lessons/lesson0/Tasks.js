@@ -478,4 +478,18 @@ counter2()      1
     // }
     //
     // sum(5)(4)(11);
-    27.
+    27. Return alterned object
+
+    // Example:
+    //     obj1 = {
+    //     foo: 'foo',
+    //         bar: 'bar'
+    //     }
+    //     obj2 = {
+    //         bar: 'foo',
+    //         some: 'some'
+    //     }
+    //     result = {
+    //     foo: 'foo',
+    //         bar: 'foo'
+    //     }
