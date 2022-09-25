@@ -478,7 +478,7 @@ counter2()      1
     // }
     //
     // sum(5)(4)(11);
-    27. Return alterned object
+    // 27. Return alterned object
 
     // Example:
     //     obj1 = {
@@ -494,7 +494,7 @@ counter2()      1
     //         bar: 'foo'
     //     }
 
-        const mergeObject = (obj1, obj2) => {
+        // const mergeObject = (obj1, obj2) => {
             // let keysOfObj1 = Object.keys(obj1);
             // let keysOfObj2 = Object.keys(obj1);
             //
@@ -508,12 +508,20 @@ counter2()      1
             //         }
             //     }
             // }wr
-            for(const key in obj1){
-                if(obj2.hasOwnProperty(key)) {
-                    obj1[key] = obj2[key]
-                }
-            }
+        //     for(const key in obj1){
+        //         if(obj2.hasOwnProperty(key)) {
+        //             obj1[key] = obj2[key]
+        //         }
+        //     }
+        // }
 
+        28. Write group function
 
-
+        Example:
+        arr = [6.1, 7.3, 4.6, 6.3]
+        callbackFunc = Math.floor
+        result = {
+            '6': [6.1, 6.3],
+            '7': [7.3],
+            '4': [4.6],
         }
