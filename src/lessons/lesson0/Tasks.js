@@ -525,3 +525,16 @@ counter2()      1
             '7': [7.3],
             '4': [4.6],
         }
+
+        const groupBy = (arr, callback) =>{
+            const result = {}
+            arr.forEach(item => {
+                let resultAfterCallback = callback(item)
+                result[resultAfterCallback]
+                ? result[resultAfterCallback].push(item)
+                    : result[resultAfterCallback] = [item]
+            })
+            return result
+        }
+
+        groupBy(arr, callbackFunc)
