@@ -515,26 +515,39 @@ counter2()      1
         //     }
         // }
 
-        28. Write group function
+        // 28. Write group function
+        //
+        // Example:
+        // arr = [6.1, 7.3, 4.6, 6.3]
+        // callbackFunc = Math.ceil()
+        // result = {
+        //     '6': [6.1, 6.3],
+        //     '7': [7.3],
+        //     '4': [4.6],
+        // }
+        //
+        // const groupBy = (arr, callback) =>{
+        //     const result = {}
+        //     arr.forEach(item => {
+        //         let resultAfterCallback = callback(item)
+        //         result[resultAfterCallback]
+        //         ? result[resultAfterCallback].push(item)
+        //             : result[resultAfterCallback] = [item]
+        //     })
+        //     return result
+        // }
+        //
+        // groupBy(arr, callbackFunc)
 
-        Example:
-        arr = [6.1, 7.3, 4.6, 6.3]
-        callbackFunc = Math.ceil()
-        result = {
-            '6': [6.1, 6.3],
-            '7': [7.3],
-            '4': [4.6],
+        29. Date task
+
+        const START =  Date.now();
+
+        function someFn(){
+            console.log('time', Date.now() - START)
+            console.log('args', arguments)
         }
 
-        const groupBy = (arr, callback) =>{
-            const result = {}
-            arr.forEach(item => {
-                let resultAfterCallback = callback(item)
-                result[resultAfterCallback]
-                ? result[resultAfterCallback].push(item)
-                    : result[resultAfterCallback] = [item]
-            })
-            return result
-        }
+        const f = someFn.delay(500)
 
-        groupBy(arr, callbackFunc)
+        f('args1', 'args2', 1, 2)
