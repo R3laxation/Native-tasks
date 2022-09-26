@@ -539,15 +539,32 @@ counter2()      1
         //
         // groupBy(arr, callbackFunc)
 
-        29. Date task
+        // 29. Date task
+        //
+        // const START =  Date.now();
+        //
+        // function someFn(){
+        //     console.log('time', Date.now() - START)
+        //     console.log('args', arguments)
+        // }
+        //
+        // const f = someFn.delay(500)
+        //
+        // f('args1', 'args2', 1, 2)
 
-        const START =  Date.now();
+    30. Является ли массив подмножеством другого массива
 
-        function someFn(){
-            console.log('time', Date.now() - START)
-            console.log('args', arguments)
-        }
+Напишите функцию, которая проверяет, является ли второй массив подмножеством первого. То есть есть ли элементы второго массива в первом.
 
-        const f = someFn.delay(500)
+**Input**: Number[] & String[], Number[] & String[]
 
-        f('args1', 'args2', 1, 2)
+**Output**: Boolean
+
+function arraySubset(source, subset) {
+    // todo
+}
+
+console.log(arraySubset([2, 1, 3], [1, 2, 3])) // -> true
+console.log(arraySubset([2, 1, 1, 3], [1, 2, 3])) // -> true
+console.log(arraySubset([1, 1, 1, 3], [1, 3, 3])) // -> false
+console.log(arraySubset([1, 2], [1, 2, 3])) // -> false
