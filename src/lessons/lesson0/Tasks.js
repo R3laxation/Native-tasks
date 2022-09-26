@@ -585,3 +585,9 @@ counter2()      1
 
 **Output**: Boolean
 
+function allAnagrams(array) {
+    // todo
+}
+
+console.log(allAnagrams(['abcd', 'bdac', 'cabd'])) // true
+console.log(allAnagrams(['abcd', 'bdXc', 'cabd'])) // false
