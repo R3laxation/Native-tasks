@@ -579,22 +579,28 @@ counter2()      1
 // console.log(arraySubset([1, 1, 1, 3], [1, 3, 3])) // -> false
 // console.log(arraySubset([1, 2], [1, 2, 3])) // -> false
 
-31. Напишите функцию, которая проверяет, являются ли все элементы в массиве анаграммами друг друга.
+// 31. Напишите функцию, которая проверяет, являются ли все элементы в массиве анаграммами друг друга.
+//
+// **Input**: String[]
+//
+// **Output**: Boolean
+//
+// function allAnagrams(array) {
+//     const sorted = array.map(str => str.split('').sort().join(''));
+//
+//     for(let i = 1; i<sorted.length; i++){
+//         if(sorted[i] !== sorted[0]) {
+//             return false
+//         }
+//     }
+//     return true
+// }
+//
+// console.log(allAnagrams(['abcd', 'bdac', 'cabd'])) // true
+// console.log(allAnagrams(['abcd', 'bdXc', 'cabd'])) // false
 
-**Input**: String[]
+    32. Reverse matrix
 
-**Output**: Boolean
+Напишите функцию, которая принимает матрицу 3х3 и переворачивает на 90 градусов по часовой стрелке.
 
-function allAnagrams(array) {
-    const sorted = array.map(str => str.split('').sort().join(''));
-
-    for(let i = 1; i<sorted.length; i++){
-        if(sorted[i] !== sorted[0]) {
-            return false
-        }
-    }
-    return true
-}
-
-console.log(allAnagrams(['abcd', 'bdac', 'cabd'])) // true
-console.log(allAnagrams(['abcd', 'bdXc', 'cabd'])) // false
+**Дополнительно**: Напишите еще 2 функции, которые переворачивают матрицу на 180 и 270 градусов.
