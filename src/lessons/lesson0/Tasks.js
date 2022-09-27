@@ -617,7 +617,14 @@ const matrix = [
 ]
 
 function rotate(source) {
-    // todo
+    const newMatrix = source[0].map(_ => []);
+
+
+    return newMatrix
+}
+
+function print(array){
+        array.forEach(i => console.log(i))
 }
 
 console.log(rotate(matrix))
