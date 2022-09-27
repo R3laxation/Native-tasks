@@ -637,6 +637,11 @@ function rotate270(source){
     return rotate(rotate180(source))
 }
 
+function rotate360(source){
+    return rotate(rotate270(source))
+}
+
+
 function print(array){
         array.forEach(i => console.log(i))
 }
