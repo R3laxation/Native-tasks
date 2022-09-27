@@ -629,6 +629,14 @@ function rotate(source) {
     return rotated
 }
 
+function rotate180(source){
+        return rotate(rotate(source))
+}
+
+function rotate270(source){
+    return rotate(rotate180(source))
+}
+
 function print(array){
         array.forEach(i => console.log(i))
 }
