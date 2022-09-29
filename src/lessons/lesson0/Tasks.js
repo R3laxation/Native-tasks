@@ -657,7 +657,13 @@ counter2()      1
 
 
 function search(array, target) {
-    // todo
+    for(let i = 0; i<array.length; i++){
+        if(array[i] === target){
+            return i
+        }
+
+    }
+    return -1
 }
 
 console.log(search([1, 3, 6, 13, 17], 13)) // -> 3
