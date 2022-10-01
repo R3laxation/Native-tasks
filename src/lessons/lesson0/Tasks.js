@@ -754,11 +754,19 @@ counter2()      1
     }
 
     dequeue() {
-        // todo: удалить первый элемент из очереди
+
+            if(this.size === 0){
+                console.warn('message')
+            }
+       const value = this.#storage[this.#fist]
+
+        delete this.#storage[this.#fist]
+        this.#fist++
+
+        return value
     }
 
     get size() {
-        // todo: возвращает размер списка
-        // нельзя использовать геттер
+        return this.#last - this.#fist
     }
 }
