@@ -770,3 +770,12 @@ counter2()      1
         return this.#last - this.#fist
     }
 }
+
+const table = new Queue();
+
+    table.enqueue(1);
+    table.enqueue(21);
+    table.enqueue(41);
+    table.dequeue();
+
+console.log(table.size)
