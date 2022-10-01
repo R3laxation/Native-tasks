@@ -749,7 +749,8 @@ counter2()      1
         #last = 0
 
     enqueue(item) {
-        // todo: добавить элемент в конец очереди
+       this.#storage[this.#last] = item;
+       this.#last++
     }
 
     dequeue() {
