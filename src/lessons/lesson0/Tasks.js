@@ -781,56 +781,56 @@ counter2()      1
 // console.log(table.size)
 
 
-class LinkList {
-        #length = 0;
-        #head = null;
-        #tail = null;
-
-        addToTail(value){
-            const node = {
-                value: value,
-                next: null
-            }
-
-            if(this.#length === 0){
-                this.#head = node
-                this.#tail = node
-            } else {
-                this.#tail = node
-            }
-            this.#length++
-        }
-        removeFromHead(){
-            if(this.#length === 0){
-                return
-            }
-            const value = this.#head.value
-            this.#head = this.#head.next
-            this.#length--
-            return value
-        }
-        size(){
-            return this.#length
-        }
-}
-
-class Queue extends LinkList{
-    constructor() {
-        super()
-        this.enqueue = this.addToTail;
-        this.dequeue = this.removeFromHead;
-    }
-
-    get size() {
-        return super.size();
-    }
-}
-
-const queue = new Queue();
-    queue.enqueue(1)
-    queue.enqueue(2)
-    queue.enqueue(3)
-    queue.enqueue(6)
-    queue.enqueue(8)
-
-console.log(queue.size)
+// class LinkList {
+//         #length = 0;
+//         #head = null;
+//         #tail = null;
+//
+//         addToTail(value){
+//             const node = {
+//                 value: value,
+//                 next: null
+//             }
+//
+//             if(this.#length === 0){
+//                 this.#head = node
+//                 this.#tail = node
+//             } else {
+//                 this.#tail = node
+//             }
+//             this.#length++
+//         }
+//         removeFromHead(){
+//             if(this.#length === 0){
+//                 return
+//             }
+//             const value = this.#head.value
+//             this.#head = this.#head.next
+//             this.#length--
+//             return value
+//         }
+//         size(){
+//             return this.#length
+//         }
+// }
+//
+// class Queue extends LinkList{
+//     constructor() {
+//         super()
+//         this.enqueue = this.addToTail;
+//         this.dequeue = this.removeFromHead;
+//     }
+//
+//     get size() {
+//         return super.size();
+//     }
+// }
+//
+// const queue = new Queue();
+//     queue.enqueue(1)
+//     queue.enqueue(2)
+//     queue.enqueue(3)
+//     queue.enqueue(6)
+//     queue.enqueue(8)
+//
+// console.log(queue.size)
