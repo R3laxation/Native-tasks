@@ -780,6 +780,40 @@ counter2()      1
 //
 // console.log(table.size)
 
+
+class LinkList {
+        #length = 0;
+        #head = null;
+        #tail = null;
+
+        addToTail(value){
+            const node = {
+                value: value,
+                next: null
+            }
+
+            if(this.#length === 0){
+                this.#head = node
+                this.#tail = node
+            } else {
+                this.#tail = node
+            }
+            this.#length++
+        }
+        removeFromHead(){
+            if(this.#length === 0){
+                return
+            }
+            const value = this.#head.value
+            this.#head = this.#head.next
+            this.#length--
+            return value
+        }
+        size(){
+            return this.#length
+        }
+}
+
 class Queue {
     constructor() {
         // todo
