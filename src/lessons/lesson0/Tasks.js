@@ -742,40 +742,59 @@ counter2()      1
 //         35. Que
 // Создайте очередь, в которой буду реализованы операции на добавление элементов в конец очереди, удаление первого элемента и вычисление размера очереди с сложностью алгоритма О(1) .
 
-    class Queue {
+//     class Queue {
+//
+//         #storage = {}
+//         #fist = 0
+//         #last = 0
+//
+//     enqueue(item) {
+//        this.#storage[this.#last] = item;
+//        this.#last++
+//     }
+//
+//     dequeue() {
+//
+//             if(this.size === 0){
+//                 console.warn('message')
+//             }
+//        const value = this.#storage[this.#fist]
+//
+//         delete this.#storage[this.#fist]
+//         this.#fist++
+//
+//         return value
+//     }
+//
+//     get size() {
+//         return this.#last - this.#fist
+//     }
+// }
+//
+// const table = new Queue();
+//
+//     table.enqueue(1);
+//     table.enqueue(21);
+//     table.enqueue(41);
+//     table.dequeue();
+//
+// console.log(table.size)
 
-        #storage = {}
-        #fist = 0
-        #last = 0
+class Queue {
+    constructor() {
+        // todo
+    }
 
     enqueue(item) {
-       this.#storage[this.#last] = item;
-       this.#last++
+        // todo: добавить элемент в конец очереди
     }
 
     dequeue() {
-
-            if(this.size === 0){
-                console.warn('message')
-            }
-       const value = this.#storage[this.#fist]
-
-        delete this.#storage[this.#fist]
-        this.#fist++
-
-        return value
+        // todo: удалить первый элемент из очереди
     }
 
     get size() {
-        return this.#last - this.#fist
+        // todo: возвращает размер списка
+        // нельзя использовать геттер
     }
 }
-
-const table = new Queue();
-
-    table.enqueue(1);
-    table.enqueue(21);
-    table.enqueue(41);
-    table.dequeue();
-
-console.log(table.size)
