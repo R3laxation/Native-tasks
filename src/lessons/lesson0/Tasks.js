@@ -814,21 +814,14 @@ class LinkList {
         }
 }
 
-class Queue {
+class Queue extends LinkList{
     constructor() {
-        // todo
-    }
-
-    enqueue(item) {
-        // todo: добавить элемент в конец очереди
-    }
-
-    dequeue() {
-        // todo: удалить первый элемент из очереди
+        super()
+        this.enqueue = this.addToTail;
+        this.dequeue = this.removeFromHead;
     }
 
     get size() {
-        // todo: возвращает размер списка
-        // нельзя использовать геттер
+        return super.size();
     }
 }
