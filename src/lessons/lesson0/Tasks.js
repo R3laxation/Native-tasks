@@ -853,5 +853,8 @@ function deepEqual(a, b) {
     if(typeof a !== 'object' || a === null || b === null){
         return a === b
     }
+    if(Object.keys(a).length !== Object.keys(b).length){
+        return false
+    }
 }
 
