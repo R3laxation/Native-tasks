@@ -842,3 +842,8 @@ counter2()      1
 **Inputs**: Any, Any
 
 **Output**: Boolean
+
+function deepEqual(a, b) {
+    // todo
+}
+
