@@ -844,6 +844,8 @@ counter2()      1
 **Output**: Boolean
 
 function deepEqual(a, b) {
-    // todo
+    if(Number.isNaN(a) && Number.isNaN(b)){
+        return true
+    }
 }
 
