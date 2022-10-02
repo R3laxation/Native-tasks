@@ -850,5 +850,8 @@ function deepEqual(a, b) {
     if(typeof a !== typeof b){
         return false
     }
+    if(typeof a !== 'object' || a === null || b === null){
+        return a === b
+    }
 }
 
