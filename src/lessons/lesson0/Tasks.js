@@ -847,5 +847,8 @@ function deepEqual(a, b) {
     if(Number.isNaN(a) && Number.isNaN(b)){
         return true
     }
+    if(typeof a !== typeof b){
+        return false
+    }
 }
 
