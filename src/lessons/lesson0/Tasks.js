@@ -834,3 +834,11 @@ counter2()      1
 //     queue.enqueue(8)
 //
 // console.log(queue.size)
+
+36. Deep equal
+
+Напишите функцию, которая будет проверять на “глубокое” равенство 2 входящих параметра
+
+**Inputs**: Any, Any
+
+**Output**: Boolean
