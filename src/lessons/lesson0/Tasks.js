@@ -898,8 +898,14 @@ counter2()      1
 //     return seq
 // }
 
-const fibonacci = function (function(){
+const fibonacci =  (function(){
+    const seq = [1, 1]
 
+    return function (n){
+        if(seq.length >= n){
+        return seq.slice(0, n)
+        }
+    }
 })()
 
 
