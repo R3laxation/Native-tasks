@@ -882,4 +882,10 @@ counter2()      1
 
 function fibonacci(n) {
     const seq = [1, 1]
+
+    if(n < 2){
+        return seq.slice(0, n)
+    }
+
+    return seq
 }
