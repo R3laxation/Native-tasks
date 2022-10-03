@@ -887,5 +887,13 @@ function fibonacci(n) {
         return seq.slice(0, n)
     }
 
+    while(seq.length < n){
+
+        const last = seq[seq.length -1]
+        const prev = seq[seq.length -2]
+
+        seq.push(last+prev)
+    }
+
     return seq
 }
