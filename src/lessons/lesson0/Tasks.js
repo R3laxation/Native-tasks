@@ -872,4 +872,11 @@ counter2()      1
 // console.log(deepEqual(NaN, NaN)) // -> true
 // console.log(deepEqual('test', 'test!')) // -> false
 // console.log(deepEqual()) // -> true
+37. Fibonacci
+
+Напишите функцию, которая будет генерировать последовательность Фиббоначи длинны `n`, которую передали как аргумент.
+
+**Input**: Number
+
+**Output**: Number[]
 
