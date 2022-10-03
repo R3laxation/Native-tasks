@@ -880,3 +880,6 @@ counter2()      1
 
 **Output**: Number[]
 
+function fibonacci(n) {
+    // todo
+}
