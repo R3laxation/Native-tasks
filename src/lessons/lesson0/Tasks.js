@@ -897,27 +897,27 @@ counter2()      1
 //
 //     return seq
 // }
-
-const fibonacci =  (function(){
-    const seq = [1, 1]
-
-    return function (n){
-        if(seq.length >= n){
-        return seq.slice(0, n)
-        }
-        while(seq.length < n){
-
-        const last = seq[seq.length -1]
-        const prev = seq[seq.length -2]
-
-        seq.push(last+prev)
-       }
-        return seq
-    }
-
-})()
-
-
-console.log(fibonacci(8))
-console.log(fibonacci(15))
-console.log(fibonacci(5))
+//
+// const fibonacci =  (function(){
+//     const seq = [1, 1]
+//
+//     return function (n){
+//         if(seq.length >= n){
+//         return seq.slice(0, n)
+//         }
+//         while(seq.length < n){
+//
+//         const last = seq[seq.length -1]
+//         const prev = seq[seq.length -2]
+//
+//         seq.push(last+prev)
+//        }
+//         return seq
+//     }
+//
+// })()
+//
+//
+// console.log(fibonacci(8))
+// console.log(fibonacci(15))
+// console.log(fibonacci(5))
