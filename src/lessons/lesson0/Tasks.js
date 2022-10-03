@@ -911,8 +911,10 @@ const fibonacci =  (function(){
         const prev = seq[seq.length -2]
 
         seq.push(last+prev)
-//     }
+       }
+        return seq
     }
+
 })()
 
 
