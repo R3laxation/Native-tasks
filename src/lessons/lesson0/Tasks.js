@@ -897,3 +897,7 @@ function fibonacci(n) {
 
     return seq
 }
+
+console.log(fibonacci(8))
+console.log(fibonacci(15))
+console.log(fibonacci(5))
