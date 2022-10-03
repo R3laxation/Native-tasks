@@ -881,5 +881,5 @@ counter2()      1
 **Output**: Number[]
 
 function fibonacci(n) {
-    // todo
+    const seq = [1, 1]
 }
