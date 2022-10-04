@@ -931,7 +931,10 @@ counter2()      1
 **Output**: Function
 
 Function.prototype.myBind = function(context, ...args){
-        return function(...rest){
+
+
+
+        return (...rest) => {
             return this.call(context, ...args.concat(...rest))
         }
 
