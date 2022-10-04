@@ -941,3 +941,7 @@ function log(...props){
 }
 
 const obj = {name: 'Konstantin', age: 28}
+
+const bound = log.myBind(obj, 42)
+
+bound()
