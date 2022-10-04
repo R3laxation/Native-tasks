@@ -929,3 +929,7 @@ counter2()      1
 **Input**: Object, arguments
 
 **Output**: Function
+
+Function.prototype.myBind = function(){
+
+}
