@@ -921,3 +921,11 @@ counter2()      1
 // console.log(fibonacci(8))
 // console.log(fibonacci(15))
 // console.log(fibonacci(5))
+
+38. Own Bind
+
+Реализуйте функцию `bind`.
+
+**Input**: Object, arguments
+
+**Output**: Function
