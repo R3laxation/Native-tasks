@@ -939,3 +939,5 @@ Function.prototype.myBind = function(context, ...args){
 function log(...props){
     console.log(this.name, this.age, ...props)
 }
+
+const obj = {name: 'Konstantin', age: 28}
