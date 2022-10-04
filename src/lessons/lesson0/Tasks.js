@@ -922,26 +922,26 @@ counter2()      1
 // console.log(fibonacci(15))
 // console.log(fibonacci(5))
 
-38. Own Bind
-
-Реализуйте функцию `bind`.
-
-**Input**: Object, arguments
-
-**Output**: Function
-
-Function.prototype.myBind = function(context, ...args){
-        return (...rest) => {
-            return this.call(context, ...args.concat(...rest))
-        }
-}
-
-function log(...props){
-    console.log(this.name, this.age, ...props)
-}
-
-const obj = {name: 'Konstantin', age: 28}
-
-const bound = log.myBind(obj, 42)
-
-bound()
+// 38. Own Bind
+//
+// Реализуйте функцию `bind`.
+//
+// **Input**: Object, arguments
+//
+// **Output**: Function
+//
+// Function.prototype.myBind = function(context, ...args){
+//         return (...rest) => {
+//             return this.call(context, ...args.concat(...rest))
+//         }
+// }
+//
+// function log(...props){
+//     console.log(this.name, this.age, ...props)
+// }
+//
+// const obj = {name: 'Konstantin', age: 28}
+//
+// const bound = log.myBind(obj, 42)
+//
+// bound()
