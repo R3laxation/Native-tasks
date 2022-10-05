@@ -954,5 +954,11 @@ counter2()      1
 **Output**: Number
 
 function add(a, b) {
+        if(!b){
+            return function(c){
+                return a + c
+            }
+        }
+        return a + b
 
 }
