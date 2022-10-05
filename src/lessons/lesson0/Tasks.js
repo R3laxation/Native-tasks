@@ -955,7 +955,7 @@ counter2()      1
 
 function add(a, b) {
         if(!a){
-            return ad
+            return add
         }
         if(!b){
             return function sum(c){
