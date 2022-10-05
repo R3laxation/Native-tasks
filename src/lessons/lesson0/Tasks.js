@@ -952,3 +952,7 @@ counter2()      1
     **Input**: Number, Number
 
 **Output**: Number
+
+function add(a, b) {
+
+}
