@@ -945,3 +945,10 @@ counter2()      1
 // const bound = log.myBind(obj, 42)
 //
 // bound()
+
+39. Universal sum
+
+Напишите функцию, которая складывает 2 числа. Работать функция должна как показано в примере ниже:
+    **Input**: Number, Number
+
+**Output**: Number
