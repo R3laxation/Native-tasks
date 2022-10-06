@@ -986,7 +986,9 @@ counter2()      1
 
 function groupBy(array, fn) {
         const res = {}
-
+        for(let i = 0;i<array.length; i++){
+        const current = array[i]
+    }
 
     return res
 }
