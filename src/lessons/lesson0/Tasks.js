@@ -976,3 +976,17 @@ counter2()      1
 // add()()()()(20)(22) // -> 42
 // add()(20)()(22) // -> 42
 // add()()()()()(20)()()()(22) // -> 42
+
+40. GroupBy
+Напишите функцию `groupBy`.
+
+**Input**: Number[] & String[], Function & String
+
+**Output**: Object
+
+function groupBy(array, fn) {
+        const res = {}
+
+
+    return res
+}
