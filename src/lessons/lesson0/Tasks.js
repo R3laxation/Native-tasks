@@ -977,25 +977,25 @@ counter2()      1
 // add()(20)()(22) // -> 42
 // add()()()()()(20)()()()(22) // -> 42
 
-40. GroupBy
-Напишите функцию `groupBy`.
-
-**Input**: Number[] & String[], Function & String
-
-**Output**: Object
-
-function groupBy(array, fn) {
-        const res = {}
-
-    return array.reduce((res, cur) => {
-
-            const key = typeof fn === 'function' ? fn(cur) : cur[fn]
-            if(!res[key]){
-                res[key] = []
-            }
-            res[key].push(cur)
-        return res
-    }, {})
-}
-groupBy([6.1, 4.2, 6.3], Math.floor) // -> { '4': [4.2], '6': [6.1, 6.3] }
-groupBy(['one', 'two', 'three'], 'length') // -> { '3': ['one', 'two'], '5': ['three'] }
+// 40. GroupBy
+// Напишите функцию `groupBy`.
+//
+// **Input**: Number[] & String[], Function & String
+//
+// **Output**: Object
+//
+// function groupBy(array, fn) {
+//         const res = {}
+//
+//     return array.reduce((res, cur) => {
+//
+//             const key = typeof fn === 'function' ? fn(cur) : cur[fn]
+//             if(!res[key]){
+//                 res[key] = []
+//             }
+//             res[key].push(cur)
+//         return res
+//     }, {})
+// }
+// groupBy([6.1, 4.2, 6.3], Math.floor) // -> { '4': [4.2], '6': [6.1, 6.3] }
+// groupBy(['one', 'two', 'three'], 'length') // -> { '3': ['one', 'two'], '5': ['three'] }
