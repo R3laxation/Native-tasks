@@ -987,7 +987,7 @@ counter2()      1
 function groupBy(array, fn) {
         const res = {}
         for(let i = 0;i<array.length; i++){
-        const current = array[i]
+        const current = typeof fn === 'function' ? fn(current) : current[fn]
 
             const key = fn(current)
             if(!res[key]){
