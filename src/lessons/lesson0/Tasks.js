@@ -988,6 +988,12 @@ function groupBy(array, fn) {
         const res = {}
         for(let i = 0;i<array.length; i++){
         const current = array[i]
+
+            const key = fn(current)
+            if(!res[key]){
+                res[key] = []
+            }
+            res[key].push(cur)
     }
 
     return res
