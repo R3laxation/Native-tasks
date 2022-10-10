@@ -1020,3 +1020,5 @@ const fizzBuzz = num => {
         }
     }
 }
+
+fizzBuzz(5)
