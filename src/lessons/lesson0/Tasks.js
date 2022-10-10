@@ -1008,5 +1008,7 @@ counter2()      1
 вывод fizzbuzz вместо чисел, кратных как 3, так и 5.
 
 const fizzBuzz = num => {
+    for(let i = 0; i<=num; i++){
 
+    }
 }
