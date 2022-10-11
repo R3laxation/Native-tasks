@@ -1038,3 +1038,6 @@ const findVowels = str => {
     }
     return count
 }
+
+findVowels('hello');
+findVowels('why');
