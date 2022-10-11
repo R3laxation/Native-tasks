@@ -1023,24 +1023,24 @@ counter2()      1
 //
 // fizzBuzz(5)
 
-42. Find vowels
-
-// Нужно написать функцию, принимающую строку в качестве аргумента и возвращающую количество гласных, которые содержатся в строке.
-//     Гласными являются «a», «e», «i», «o», «u».
-
-const findVowels = str => {
-    // let count = 0;
-    // const vowels = ['a', 'e', 'i', 'o', 'u'];
-    // for(let char of str.toLowerCase()){
-    //     if(vowels.includes(char)){
-    //         count++
-    //     }
-    // }
-    // return count
-    const matched = str.match(/[aeiuo]/gi);
-    return  matched ? matched.length:0
-
-}
-
-findVowels('hello');
-findVowels('why');
+// 42. Find vowels
+//
+// // Нужно написать функцию, принимающую строку в качестве аргумента и возвращающую количество гласных, которые содержатся в строке.
+// //     Гласными являются «a», «e», «i», «o», «u».
+//
+// const findVowels = str => {
+//     // let count = 0;
+//     // const vowels = ['a', 'e', 'i', 'o', 'u'];
+//     // for(let char of str.toLowerCase()){
+//     //     if(vowels.includes(char)){
+//     //         count++
+//     //     }
+//     // }
+//     // return count
+//     const matched = str.match(/[aeiuo]/gi);
+//     return  matched ? matched.length:0
+//
+// }
+//
+// findVowels('hello');
+// findVowels('why');
