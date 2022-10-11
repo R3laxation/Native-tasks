@@ -1029,14 +1029,17 @@ counter2()      1
 //     Гласными являются «a», «e», «i», «o», «u».
 
 const findVowels = str => {
-    let count = 0;
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    for(let char of str.toLowerCase()){
-        if(vowels.includes(char)){
-            count++
-        }
-    }
-    return count
+    // let count = 0;
+    // const vowels = ['a', 'e', 'i', 'o', 'u'];
+    // for(let char of str.toLowerCase()){
+    //     if(vowels.includes(char)){
+    //         count++
+    //     }
+    // }
+    // return count
+    const matched = str.match(/[aeiuo]/gi);
+    return  matched ? matched.length:0
+
 }
 
 findVowels('hello');
