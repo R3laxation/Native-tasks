@@ -1029,5 +1029,6 @@ counter2()      1
 //     Гласными являются «a», «e», «i», «o», «u».
 
 const findVowels = str => {
-
+    let count = 0;
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
 }
