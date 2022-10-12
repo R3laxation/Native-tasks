@@ -1051,7 +1051,8 @@ counter2()      1
 const fibonacci = num => {
         const res = [0, 1];
         for (let i = 0; i < num; i++){
-        const prev1 = res[i - 1]
+        const prev1 = res[i - 1];
+        const prev2 = res[i - 2];
     }
 
 }
