@@ -1055,5 +1055,5 @@ const fibonacci = num => {
         const prev2 = res[i - 2];
         res.push(prev1 + prev2);
     }
-
+        return res[num];
 }
