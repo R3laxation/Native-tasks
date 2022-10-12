@@ -1057,3 +1057,4 @@ const fibonacci = num => {
     }
         return res[num];
 }
+console.log(fibonacci(3));
