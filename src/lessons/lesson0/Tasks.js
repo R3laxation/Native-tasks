@@ -1053,6 +1053,7 @@ const fibonacci = num => {
         for (let i = 0; i < num; i++){
         const prev1 = res[i - 1];
         const prev2 = res[i - 2];
+        res.push(prev1 + prev2);
     }
 
 }
