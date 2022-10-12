@@ -1049,12 +1049,15 @@ counter2()      1
 
 // Нужно написать функцию, которая возвращает n-ную запись в определенной последовательности, причем n — число, которое передается в качестве аргумента функции.
 const fibonacci = num => {
-        const res = [0, 1];
-        for (let i = 0; i < num; i++){
-        const prev1 = res[i - 1];
-        const prev2 = res[i - 2];
-        res.push(prev1 + prev2);
+    //     const res = [0, 1];
+    //     for (let i = 0; i < num; i++){
+    //     const prev1 = res[i - 1];
+    //     const prev2 = res[i - 2];
+    //     res.push(prev1 + prev2);
+    // }
+    //     return res[num];
+    if(num <2){
+        return num
     }
-        return res[num];
 }
 console.log(fibonacci(3));
