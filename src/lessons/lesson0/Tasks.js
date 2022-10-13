@@ -1068,5 +1068,8 @@ counter2()      1
 
 const buildCharObj = str => {
         const charObj = {};
+        for(let char of str.replace(/[^\w]/g){
+
+        }
 
 }
