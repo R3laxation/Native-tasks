@@ -1063,19 +1063,19 @@ counter2()      1
 // }
 // console.log(fibonacci(3));
 
-44. Anagramma
-// Нужно написать функцию, которая проверяет, являются ли две строки анаграммами, причем регистр букв не имеет значения. Учитываются лишь символы; пробелы или знаки препинания в расчет не берутся.
-
-const buildCharObj = str => {
-        const charObj = {};
-        for(let char of str.replace(/[^\w]/g)){
-            charObj[char] = charObj[char] + 1 || 1
-        }
-        return charObj
-};
-
-    const anagram = (strA, strB) => {
-        const aCharObj = buildCharObj(strA);
-        const bCharObj = buildCharObj(strB);
-
-    }
+// 44. Anagramma
+// // Нужно написать функцию, которая проверяет, являются ли две строки анаграммами, причем регистр букв не имеет значения. Учитываются лишь символы; пробелы или знаки препинания в расчет не берутся.
+//
+// const buildCharObj = str => {
+//         const charObj = {};
+//         for(let char of str.replace(/[^\w]/g)){
+//             charObj[char] = charObj[char] + 1 || 1
+//         }
+//         return charObj
+// };
+//
+//     const anagram = (strA, strB) => {
+//         const aCharObj = buildCharObj(strA);
+//         const bCharObj = buildCharObj(strB);
+//
+//     }
