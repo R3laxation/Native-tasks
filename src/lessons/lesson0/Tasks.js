@@ -1075,5 +1075,7 @@ const buildCharObj = str => {
 };
 
     const anagram = (strA, strB) => {
+        const aCharObj = buildCharObj(strA);
+        const bCharObj = buildCharObj(strB);
 
     }
