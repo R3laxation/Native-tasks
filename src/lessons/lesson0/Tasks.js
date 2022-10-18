@@ -1084,8 +1084,8 @@ counter2()      1
 //     }
 //     anagram('finder', 'Friend');
 
-45. Sum of square pows
-
-// Напишите однострочное решение, которое вычисляет сумму квадратных корней для всех чётных чисел целочисленного массива.
-    const arr = [1,4,3,0,4,5,4];
-    console.log(arr.filter(item => !(item % 2)).reduceRight((acc, el) => acc + Math.sqrt(el), 0);)
+// 45. Sum of square pows
+//
+// // Напишите однострочное решение, которое вычисляет сумму квадратных корней для всех чётных чисел целочисленного массива.
+//     const arr = [1,4,3,0,4,5,4];
+//     console.log(arr.filter(item => !(item % 2)).reduceRight((acc, el) => acc + Math.sqrt(el), 0);)
