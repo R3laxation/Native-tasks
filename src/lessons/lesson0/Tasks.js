@@ -1126,4 +1126,9 @@ let tenNumbersModulator = getNumbersModulatordBy(
 
 window.configuration.modulus = 5;
 
+let fiveNumbersModulator = getNumbersModulatordBy(
+    configuration.modulus,
+    loggerCallback
+);
+
 
