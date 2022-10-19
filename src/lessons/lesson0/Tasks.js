@@ -1097,7 +1097,13 @@ counter2()      1
 let loggerCallback = data => console.log(data);
 function getNumbersModulatordBy(modulus, loggerCallback) {
     return function(start, end) {
-
+        loggerCallback({ message: "Конфигурация", config: configuration });
+        loggerCallback({ message: "Полученный модулятор", modulus: modulus });
+        loggerCallback({
+            message: "Полученный start и end",
+            start: start,
+            end: end
+        })
         });
 }
 
