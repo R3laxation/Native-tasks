@@ -1119,4 +1119,9 @@ function getNumbersModulatordBy(modulus, loggerCallback) {
     };
 }
 
+let tenNumbersModulator = getNumbersModulatordBy(
+    configuration.modulus,
+    loggerCallback
+);
+
 
