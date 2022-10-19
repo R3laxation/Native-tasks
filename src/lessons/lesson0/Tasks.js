@@ -1134,4 +1134,6 @@ let fiveNumbersModulator = getNumbersModulatordBy(
 tenNumbersModulator(configuration.start, configuration.end); // 50, 60
 tenNumbersModulator(10, 100); // 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
 
+window.configuration.isEntry = true;
+
 
