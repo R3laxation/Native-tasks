@@ -1137,5 +1137,6 @@ tenNumbersModulator(10, 100); // 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
 window.configuration.isEntry = true;
 
 fiveNumbersModulator(configuration.start, configuration.end); // 46, 51, 56, 61, 66
+fiveNumbersModulator(10, 21); // 11, 16, 21
 
 
