@@ -1104,7 +1104,13 @@ function getNumbersModulatordBy(modulus, loggerCallback) {
             start: start,
             end: end
         })
-        });
+        while (start <= end) {
+            if (start % modulus == configuration.isEntry) {
+                loggerCallback(start);
+            }
+            start++;
+        }
+    };
 }
 
 
