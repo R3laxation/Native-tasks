@@ -1089,3 +1089,14 @@ counter2()      1
 // // Напишите однострочное решение, которое вычисляет сумму квадратных корней для всех чётных чисел целочисленного массива.
 //     const arr = [1,4,3,0,4,5,4];
 //     console.log(arr.filter(item => !(item % 2)).reduceRight((acc, el) => acc + Math.sqrt(el), 0);)
+
+
+46. Function log
+
+// Напишите функцию, которая пишет в консоль число в заданном диапазоне, в случае, если оно успешно делится или не делится с остатком или без остатка в зависимости от параметров.
+
+function getNumbersModulatordBy(modulus, loggerCallback) {
+    return function(start, end) {
+
+        });
+}
