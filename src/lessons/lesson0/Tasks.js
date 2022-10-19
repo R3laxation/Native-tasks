@@ -1094,9 +1094,11 @@ counter2()      1
 46. Function log
 
 // Напишите функцию, которая пишет в консоль число в заданном диапазоне, в случае, если оно успешно делится или не делится с остатком или без остатка в зависимости от параметров.
-
+let loggerCallback = data => console.log(data);
 function getNumbersModulatordBy(modulus, loggerCallback) {
     return function(start, end) {
 
         });
 }
+
+
