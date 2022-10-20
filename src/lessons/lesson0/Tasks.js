@@ -1152,3 +1152,9 @@ class Animal {
         }
 }
 
+class Cat extends Animal {
+    constructor(name, age, childs = null) {
+        super(name, age, childs);
+    }
+}
+
