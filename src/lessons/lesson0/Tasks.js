@@ -1091,52 +1091,64 @@ counter2()      1
 //     console.log(arr.filter(item => !(item % 2)).reduceRight((acc, el) => acc + Math.sqrt(el), 0);)
 
 
-46. Function log
+// 46. Function log
+//
+// // Напишите функцию, которая пишет в консоль число в заданном диапазоне, в случае, если оно успешно делится или не делится с остатком или без остатка в зависимости от параметров.
+// let configuration = {
+//     modulus: 10,
+//     isEntry: false,
+//     start: 45,
+//     end: 68
+// };
+// let loggerCallback = data => console.log(data);
+// function getNumbersModulatordBy(modulus, loggerCallback) {
+//     return function(start, end) {
+//         loggerCallback({ message: "Конфигурация", config: configuration });
+//         loggerCallback({ message: "Полученный модулятор", modulus: modulus });
+//         loggerCallback({
+//             message: "Полученный start и end",
+//             start: start,
+//             end: end
+//         })
+//         while (start <= end) {
+//             if (start % modulus == configuration.isEntry) {
+//                 loggerCallback(start);
+//             }
+//             start++;
+//         }
+//     };
+// }
+//
+// let tenNumbersModulator = getNumbersModulatordBy(
+//     configuration.modulus,
+//     loggerCallback
+// );
+//
+// window.configuration.modulus = 5;
+//
+// let fiveNumbersModulator = getNumbersModulatordBy(
+//     configuration.modulus,
+//     loggerCallback
+// );
+//
+// tenNumbersModulator(configuration.start, configuration.end); // 50, 60
+// tenNumbersModulator(10, 100); // 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
+//
+// window.configuration.isEntry = true;
+//
+// fiveNumbersModulator(configuration.start, configuration.end); // 46, 51, 56, 61, 66
+// fiveNumbersModulator(10, 21); // 11, 16, 21
 
-// Напишите функцию, которая пишет в консоль число в заданном диапазоне, в случае, если оно успешно делится или не делится с остатком или без остатка в зависимости от параметров.
-let configuration = {
-    modulus: 10,
-    isEntry: false,
-    start: 45,
-    end: 68
-};
-let loggerCallback = data => console.log(data);
-function getNumbersModulatordBy(modulus, loggerCallback) {
-    return function(start, end) {
-        loggerCallback({ message: "Конфигурация", config: configuration });
-        loggerCallback({ message: "Полученный модулятор", modulus: modulus });
-        loggerCallback({
-            message: "Полученный start и end",
-            start: start,
-            end: end
-        })
-        while (start <= end) {
-            if (start % modulus == configuration.isEntry) {
-                loggerCallback(start);
-            }
-            start++;
+47. Function farm
+// Есть ферма животных, у всех животных есть имена и возраст. Животные бывают разных типов: Кошки, Собаки, Коровы. У каждого животного могут быть дети. Если животное является родителем этих детей, в свою очередь глубина семейного древа может достигать N либо 0.
+//
+// Опишите структуры данных для фермы животных и напишите функцию, которая делает подсчёт всех возрастов животных и выводит общий возраст для всей фермы.
+
+class Animal {
+        constructor(name, age, childs = null) {
+            this.name = name;
+            this.age = age;
+            this.childs = childs;
         }
-    };
 }
-
-let tenNumbersModulator = getNumbersModulatordBy(
-    configuration.modulus,
-    loggerCallback
-);
-
-window.configuration.modulus = 5;
-
-let fiveNumbersModulator = getNumbersModulatordBy(
-    configuration.modulus,
-    loggerCallback
-);
-
-tenNumbersModulator(configuration.start, configuration.end); // 50, 60
-tenNumbersModulator(10, 100); // 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
-
-window.configuration.isEntry = true;
-
-fiveNumbersModulator(configuration.start, configuration.end); // 46, 51, 56, 61, 66
-fiveNumbersModulator(10, 21); // 11, 16, 21
-
 
