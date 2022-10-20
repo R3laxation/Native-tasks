@@ -1139,22 +1139,22 @@ counter2()      1
 // fiveNumbersModulator(configuration.start, configuration.end); // 46, 51, 56, 61, 66
 // fiveNumbersModulator(10, 21); // 11, 16, 21
 
-47. Function farm
-// Есть ферма животных, у всех животных есть имена и возраст. Животные бывают разных типов: Кошки, Собаки, Коровы. У каждого животного могут быть дети. Если животное является родителем этих детей, в свою очередь глубина семейного древа может достигать N либо 0.
+// 47. Function farm
+// // Есть ферма животных, у всех животных есть имена и возраст. Животные бывают разных типов: Кошки, Собаки, Коровы. У каждого животного могут быть дети. Если животное является родителем этих детей, в свою очередь глубина семейного древа может достигать N либо 0.
+// //
+// // Опишите структуры данных для фермы животных и напишите функцию, которая делает подсчёт всех возрастов животных и выводит общий возраст для всей фермы.
 //
-// Опишите структуры данных для фермы животных и напишите функцию, которая делает подсчёт всех возрастов животных и выводит общий возраст для всей фермы.
-
-class Animal {
-        constructor(name, age, childs = null) {
-            this.name = name;
-            this.age = age;
-            this.childs = childs;
-        }
-}
-
-class Cat extends Animal {
-    constructor(name, age, childs = null) {
-        super(name, age, childs);
-    }
-}
+// class Animal {
+//         constructor(name, age, childs = null) {
+//             this.name = name;
+//             this.age = age;
+//             this.childs = childs;
+//         }
+// }
+//
+// class Cat extends Animal {
+//     constructor(name, age, childs = null) {
+//         super(name, age, childs);
+//     }
+// }
 
